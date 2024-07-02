@@ -1,30 +1,4 @@
-// let car = {
-//     // properti (variable)
-//     type: "Fiat",
-//     model: "500",
-//     color: "white",
-//     // method (function)
-//     start: function () {
-//         console.log("Ini adalah methode Start")
-//     },
-//     drive: function () {
-//         console.log("Ini adalah methode Drive")
-//     },
-//     brake: function () {
-//         console.log("Ini adalah methode Brake")
-//     },
-//     stop: function () {
-//         console.log("Ini adalah methode Stop")
-//     }
-// }
-
-// let bioData ={
-//     name:"iqbal",
-//     prodi:"d3 mi",
-//     hobi:["otomotif","renang","gaming"]
-// }
 const animals = [
-
     {
         id: 1,
         name: "kucing",
@@ -54,25 +28,7 @@ const animals = [
         price: "100.000"
     },
 ]
-animals.forEach((animal) => {
-    document.write(`
-    <main>
-        <figure>
-            <img src="${animal.image}" alt="">
-                <figcaption>
-                    <h1>nama: ${animal.name}</h1>
-                    <h2>kategori:${animal.kategori}</h1>
-                    <h3>harga: Rp.${animal.price}</h1>
-                 </figcaption>
-                <tom>
-                    <button onclick="beli()">beli sekarang</button> 
-                    <button onclick="like()">like</button> 
-                    <button onclick="coment()">coment</button>
-                </tom>
-        </figure>
-    </main>
-    `)
-});
+
 function beli() {
     let cek = confirm("pakah anda yakin ingin bembeli");
 
@@ -90,9 +46,10 @@ function like() {
 }
 
 function coment() {
-    let komen= prompt("masukan komentar anda")
+    let komen = prompt("masukan komentar anda")
     console.log(komen)
     alert("dikomentari dan masuk ke console")
 }
 
+document.getElementsByTagName('main').appendChild(document.write(`<h1>iqbal</h1>`));
 
